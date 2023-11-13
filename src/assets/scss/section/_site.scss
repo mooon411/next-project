@@ -1,0 +1,120 @@
+.site__inner {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--zcolor);
+}
+.site__title {
+    width: 50%;
+    height: 5vw;
+    font-size: 4vw;
+    font-weight: 400;
+    line-height: 1.6;
+    text-transform: uppercase;
+    font-family: var(--mfont);
+    border-bottom: 0.4vw solid var(--white);
+    color: var(--white);
+    position: sticky;
+    top: 70px;
+    left: 0;
+    z-index: 100;
+    margin-bottom: 2rem;
+}
+.site__title em {
+    display: block;
+    font-family: var(--mainKor-font);
+    font-size: 1.25rem;
+    font-weight: 400;
+    display: inline-block;
+    vertical-align: 5px;
+}
+.site__wrap {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.site__item {
+    width: 80%;
+    padding: 15vh 0;
+    margin-bottom: 1vh;
+    text-align: center;
+    background-color: #ffffffd0;
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--zcolor);
+    position: sticky;
+    left: 0;
+}
+.site__item.s1 {
+    background-color: #ffffffd0;
+    top: 180px;
+}
+.site__item.s2 {
+    background-color: #ffffffd0;
+    top: 200px;
+}
+.site__item.s3 {
+    background-color: #ffffffd0;
+    top: 220px;
+}
+.site__item.s4 {
+    background-color: #ffffffd0;
+    top: 240px;
+}
+.site__item .num {
+    font-size: 5vw;
+    line-height: 1;
+    font-weight: 900;
+    font-family: var(--mainNum-font);
+    position: absolute;
+    left: 1vw;
+    top: 1vw;
+    color: var(--zcolor);
+}
+.site__item .text {
+    font-size: 3vw;
+    font-family: var(--mfont);
+    text-transform: uppercase;
+    color: var(--zcolorUp);
+    text-decoration: underline;
+    text-underline-position: under;
+    margin-bottom: 1vh;
+}
+.site__item .title {
+    font-size: 1rem;
+    margin-bottom: 3vh;
+    color: var(--black500);
+}
+.site__item .btn {
+    margin-bottom: 1vh;
+}
+.site__item .btn > a {
+    padding: 0.4rem 0.5rem;
+    margin: 5px;
+    border-radius: 3px;
+    color: var(--white);
+    background-color: var(--zcolorUp);
+    transition: all .2s;
+    font-size: 1rem;
+}
+.site__item .btn > a:hover {
+    background-color: var(--zcolor);
+}
+
+.site__item .info {
+    position: absolute;
+    left: 0;
+    bottom: 3%;
+    width: 98%;
+    margin-left: 1%;
+    color: var(--zcolor);
+    border-top: 1px solid var(--zcolor);
+    border-bottom: 1px solid var(--zcolor);
+    display: flex;
+    justify-content: space-between;
+}
+.site__item .info span {
+    font-family: var(--mainKor-font);
+    font-size: .75rem;
+    padding: 3px 0;
+    text-transform: uppercase;
+}

@@ -1,12 +1,13 @@
 import React from "react";
+import { contactText } from "../constants";
 
-const Intro = () => {
+const Contacts = () => {
   return (
-    <section id="intro">
-      <div className="intro__inner">
-        <h1 className="intro__title">Developer log</h1>
+    <section id="contact">
+      <div className="contact__inner">
+        <h2 className="contact__title">Contact</h2>
 
-        <div className="intro__lines" aria-hidden="true">
+        <div className="contact__lines" aria-hidden="true">
           <span className="line"></span>
           <span className="line"></span>
           <span className="line"></span>
@@ -15,14 +16,15 @@ const Intro = () => {
           <span className="line"></span>
           <span className="line"></span>
         </div>
-
-        <div className="intro__text">
+        <div className="contact__text">
           <div className="text">
-            <div>HELLO</div>
-            <div>MY NAME</div>
-            <div>IS YEONGIN</div>
+            <div>
+              <a href="/">{contactText.kakao}</a>
+            </div>
+            <div>
+              <a href="/">{contactText.mail}</a>
+            </div>
           </div>
-          <div className="img"></div>
         </div>
 
         <div className="intro__lines bottom" aria-hidden="true">
@@ -39,4 +41,4 @@ const Intro = () => {
   );
 };
 
-export default Intro;
+export default Contacts;
